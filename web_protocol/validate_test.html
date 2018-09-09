@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head> 
+	<title> javascript validation</title> 
+</head>
+
+<h2>Please Enter Your Name </h2>
+<form name='my_form' method='post' onsubmit='return validate_form()'>
+Your name: <input type='text' name='invoice_text'/>
+<button>Send Details</button>
+</form>
+
+<script>
+	function validate_form()
+	{
+		valid = true;
+
+		if(document.my_form.invoice_text.value=="")
+		{
+			alert("Please fill in the 'Your Name' box.");
+			valid = false;
+		}
+		
+	return valid; 
+	}
+</script>
+</html>
